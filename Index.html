@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>مچستان</title>
+  <link rel="stylesheet" href="style.css">
 
+  <!-- آیکون بازی -->
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+
+  <!-- صفحه شروع -->
+  <div id="login-screen">
+    <div class="login-background"></div>
+    <div class="login-content">
+      <img id="start-button" src="pieces/start-button.png" alt="شروع بازی">
+    </div>
+  </div>
+
+  <!-- صفحه بازی -->
+  <div id="game-screen" class="hidden">
+    <div class="game-header">
+      <div>حرکت‌ها: <span id="moves-left">20</span></div>
+      <div>امتیاز: <span id="current-score">0</span></div>
+      <div>هدف: <span id="objective-text">جمع آوری ۵ کاپ‌کیک قرمز</span></div>
+    </div>
+
+    <!-- نوار گفت‌وگو مربی -->
+    <div id="coach">
+      <div id="coach-dialog">بزن بریم، وقت ترکوندنه!</div>
+    </div>
+
+    <!-- تخته بازی -->
+    <div id="game-board"></div>
+  </div>
+
+  <!-- پاپ‌آپ امتیاز -->
+  <div id="popup-info" class="popup-info hidden"></div>
+
+  <!-- اسکریپت بازی -->
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="icon" type="image/png" href="icon.png">
